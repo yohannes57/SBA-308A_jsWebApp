@@ -1,0 +1,11 @@
+body {
+  background-color: whitesmoke;
+}
+#header {
+  border-bottom: 1px green solid;
+  text-align: center;
+  text-decoration: line-through;
+  text-shadow: 1px red;
+  color: green;
+}
+/* css for main */
