@@ -9,3 +9,7 @@ body {
   color: green;
 }
 /* css for main */
+#display {
+  width: 90;
+  margin: auto;
+}
