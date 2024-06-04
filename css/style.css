@@ -6,24 +6,40 @@ body {
   text-align: center;
   text-decoration: line-through;
   text-shadow: 1px solid red;
-  color: gray;
+  color: rgb(206, 205, 205);
   text-transform: uppercase;
   font-style: italic;
   font-size: xx-small;
+  padding-bottom: 10px;
 }
+
 /* css for main */
-#display {
-  width: 90%;
+
+#mainBody{
+  width: 80%;
   margin: auto;
+  text-align: center;
+}
+#display {
+  width: 80%;
+  margin: auto;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  
+
 }
 /* actionButtons */
 #actionButtons {
   display: flex;
   text-align: center;
-  margin: auto;
+  margin: 0 auto;
   width: 80%;
   gap: 10px;
   padding: 10px;
+  justify-content: center;
+  
 }
 
 #displayButton {
@@ -63,3 +79,13 @@ body {
   transition: background-color 0.3s ease;
 }
 /* end */
+/* img of cat  */
+img {
+  width: 300px;
+  height: auto;
+  background-image: url('/RE4uOIy.webp');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  text-align: center;
+}

@@ -1,14 +1,13 @@
 // this is module creates all elements
 let elementP = document.createElement("p");
 elementP.classList.add("paragraph");
-elementP.textContent = "";
 
 let btn = document.createElement("button");
 btn.classList.add("btn");
 btn.textContent = "display";
 ///
-let moviesButton = document.createElement("button");
-moviesButton.classList.add("movies");
-moviesButton.textContent = "movies";
+let catButton = document.createElement("button");
+catButton.classList.add("cat");
+catButton.textContent = "Get your Cat";
 
-export { elementP, btn, moviesButton };
+export { elementP, btn, catButton };

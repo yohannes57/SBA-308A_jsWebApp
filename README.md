@@ -21,7 +21,7 @@ This project is a simple web application that demonstrates how to fetch data fro
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/yourusername/SBA-308A_jsWebApp.git
+   git clone https://github.com/yohannes57/SBA-308A_jsWebApp.git
    ```
 
 ### Usage
