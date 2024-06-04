@@ -1,7 +1,7 @@
 // this is module creates all elements
 let elementP = document.createElement("p");
 elementP.classList.add("paragraph");
-elementP.textContent = "ppppppppppppppppppppppppppppppppp";
+elementP.textContent = "";
 
 let btn = document.createElement("button");
 btn.classList.add("btn");

@@ -5,11 +5,61 @@ body {
   border-bottom: 1px green solid;
   text-align: center;
   text-decoration: line-through;
-  text-shadow: 1px red;
-  color: green;
+  text-shadow: 1px solid red;
+  color: gray;
+  text-transform: uppercase;
+  font-style: italic;
+  font-size: xx-small;
 }
 /* css for main */
 #display {
-  width: 90;
+  width: 90%;
   margin: auto;
 }
+/* actionButtons */
+#actionButtons {
+  display: flex;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  gap: 10px;
+  padding: 10px;
+}
+
+#displayButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#displayButton:hover {
+  background-color: #45a049;
+}
+
+#actionButtons input[type="search"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s ease;
+}
+
+#actionButtons input[type="search"]:focus {
+  border-color: #4caf50;
+}
+#searchContainer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #aec6af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+/* end */

@@ -14,34 +14,35 @@ async function fetchData() {
 }
 //------------------------------------------------------------------------------
 // #region fetching movies second example
-// async function fetchMovies() {
-//   try {
-//     const options = {
-//       method: "GET",
-//       headers: {
-//         accept: "application/json",
-//         Authorization:
-//           "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2MWUwYWRjZTFjY2Q4ZjU5NjI4MWY1ZWM5Y2E2ZTJmZSIsInN1YiI6IjYzOWJjZGEyMDc1Mjg4MDBkMmI5ZGYzOSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.vLxKQIL_PO1o5jUFe_keGqn0unHAFwQ9xngSWIt6NNU",
-//       },
-//     };
+const api_key = "4a8a6e882dfe23d4066d963ccb7b3c72";
+// https://api.themoviedb.org/3/movie/11?api-key4a8a6e882dfe23d4066d963ccb7b3c72
+//     const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=4a8a6e882dfe23d4066d963ccb7b3c72)
+const url = `https://api.themoviedb.org/3/movie/11?api_key=${api_key}`;
+async function fetchMovies() {
+  let data;
+  try {
+    const options = {
+      method: "GET",
+      headers: {
+        accept: "application/json",
+      },
+    };
 
-//     let response = await fetch(
-//       "https://api.themoviedb.org/3/authentication",
-//       options
-//     )
-//       .then((response) => response.json())
-//       .then((response) => {
-//         return response;
-//       })
-//       .catch((err) => console.error(err));
-//     return response;
-//   } catch (error) {
-//     console.log(error);
-//   }
-// }
+    let response = await fetch(
+      "https://api.thecatapi.com/v1/images/search",
+      options
+    );
+    // console.log(response, "....");
+    data = await response.json();
+    console.log(data, "..data");
+  } catch (error) {
+    console.log(error);
+  }
+  return data;
+}
 //#endregion
 //---------------------------------------
 // exports
 
-export { fetchData };
+export { fetchData, fetchMovies };
 // // export let name = "yohannes";
