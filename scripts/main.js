@@ -64,12 +64,12 @@ display.appendChild(catButton);
 //#region search the movies by fetched from the movie database api
 searchButton.addEventListener('click',searchHandler);
  async function searchHandler(){
-  const data = await fetchData();
+  const data = await fetchMovies();
   try {
 let valueSelected=search.value;
 // console.log(valueSelected,"value selected ")//worked
 // if(valueSelected==data.title)
-console.log(data[valueSelected]);
+console.log(data.results[0]);
 
   } catch (error) {
     console.log(error);

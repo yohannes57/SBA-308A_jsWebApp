@@ -53,7 +53,7 @@ async function fetchTheCat() {
 // https://api.themoviedb.org/3/movie/11?api-key4a8a6e882dfe23d4066d963ccb7b3c72
 //const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=4a8a6e882dfe23d4066d963ccb7b3c72)
 // const url = `https://api.themoviedb.org/3/movie/11?api_key=${api_key}`;
-
+// https://api.themoviedb.org/3/discover/tv?api_key=4a8a6e882dfe23d4066d963ccb7b3c72&with_networks=213
 async function fetchMovies() {
   let data;
   try {
@@ -65,7 +65,7 @@ async function fetchMovies() {
     };
 
     let response = await fetch(
-      "https://api.thecatapi.com/v1/images/search",
+      "https://api.themoviedb.org/3/discover/tv?api_key=4a8a6e882dfe23d4066d963ccb7b3c72&with_networks=213",
       options
     );
     // console.log(response, "....");

@@ -89,3 +89,17 @@ img {
   background-repeat: no-repeat;
   text-align: center;
 }
+p{
+  background-color:rgb(243, 241, 238);
+  box-shadow: #45a049;
+  padding: 10px;
+  font-size: large;
+  text-shadow: #FC0 1px 0 10px;
+  
+}
+/* movies Display */
+#moviesDisplay{
+  display: flexbox;
+  flex-wrap: wrap;
+  
+}
