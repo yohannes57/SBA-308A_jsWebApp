@@ -1,4 +1,4 @@
-# Data Fetching Demo
+# SBA on Advanced ja concept
 
 ## Overview
 
@@ -21,23 +21,21 @@ This project is a simple web application that demonstrates how to fetch data fro
 
 1. Clone the repository to your local machine:
    ```sh
-   git clone https://github.com/yourusername/data-fetching-demo.git
-   ```
-2. Navigate to the project directory:
-   ```sh
-   cd data-fetching-demo
+   git clone https://github.com/yourusername/SBA-308A_jsWebApp.git
    ```
 
 ### Usage
 
 1. Open `index.html` in your web browser.
-2. Click the "Fetch Data" button to retrieve and display data from the API.
+2. Click the "display and movies " button to retrieve and display data from the API.
+3. or maybe search the data you want by typing the name in the given input
 
 ## Project Structure
 
 - `index.html`: The main HTML file that includes the button and display container.
 - `main.js`: The main JavaScript file that handles the click event and DOM manipulation.
-- `dataFetcher.js`: A module that contains the function to fetch data from the API.
+- `dataFromApi.js`: A module that contains the function to fetch data from the API.
+- `createElements.js`: A module uses to crate different elements for html and css part #dynamically.
 
 ## Example Code
 
