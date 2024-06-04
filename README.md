@@ -1,4 +1,4 @@
-# SBA on Advanced ja concept
+# SBA on Advanced JavaScript concepts
 
 ## Overview
 
