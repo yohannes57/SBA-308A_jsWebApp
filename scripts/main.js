@@ -3,10 +3,9 @@ console.log("SBA 308A js web application assignment");
 //dom getElements
 let display = document.getElementById("display");
 let displayButton = document.getElementById("displayButton");
-let search = document.querySelector("#searchInput");
-let searchButton = document.querySelector("#searchButton");
-let moviesDisplay = document.getElementById("moviesDisplay");
-
+// let search = document.querySelector("#searchInput");
+// let searchButton = document.querySelector("#searchButton");
+// let moviesDisplay = document.getElementById("moviesDisplay");
 // importing modules
 import { btn, elementP, catButton } from "./createElements.js";
 import { fetchData, fetchMovies, fetchTheCat, API_KEY } from "./dataFromApi.js";
@@ -45,7 +44,7 @@ async function handleClickEventMovies() {
       elementImg.addEventListener("mouseover", (e) => {
         e.preventDefault();
         e.stopPropagation();
-        elementImg.style.width = "100%";
+        elementImg.style.width = "80%";
         elementImg.style.boxShadow = "1px solid black";
       });
       elementImg.addEventListener("mouseleave", (e) => {
@@ -141,6 +140,7 @@ function showMovieDetail(movie) {
         <img src="${posterUrl}" alt="${movie.name}">
         <h2>${movie.name}</h2>
         <p>${movie.overview}</p>
+        <p>${movie.country}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
     `;
 
