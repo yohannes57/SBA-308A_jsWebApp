@@ -140,7 +140,7 @@ function showMovieDetail(movie) {
         <img src="${posterUrl}" alt="${movie.name}">
         <h2>${movie.name}</h2>
         <p>${movie.overview}</p>
-        <p>${movie.country}</p>
+        <p>${movie.origin_country}</p>
         <p><strong>Rating:</strong> ${movie.vote_average}</p>
     `;
 
