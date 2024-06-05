@@ -121,6 +121,10 @@ p {
   background-color: white;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  max-width: 80%;
+  max-height: 80%;
+  overflow-y: auto;
+  z-index: 1000;
 }
 #movieDetail img {
   max-width: 80%;

@@ -82,6 +82,18 @@ document.getElementById("nextPage").addEventListener("click", () => {
   updateMovies();
 });
 
+document.getElementById("prevPageBottom").addEventListener("click", () => {
+  if (currentPage > 1) {
+    currentPage--;
+    updateMovies();
+  }
+});
+
+document.getElementById("nextPageBottom").addEventListener("click", () => {
+  currentPage++;
+  updateMovies();
+});
+
 document.getElementById("backToTop").addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
