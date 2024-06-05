@@ -15,7 +15,7 @@ body {
 
 /* css for main */
 
-#mainBody{
+#mainBody {
   width: 80%;
   margin: auto;
   text-align: center;
@@ -27,8 +27,6 @@ body {
   text-align: center;
   display: flex;
   justify-content: center;
-  
-
 }
 /* actionButtons */
 #actionButtons {
@@ -39,7 +37,6 @@ body {
   gap: 10px;
   padding: 10px;
   justify-content: center;
-  
 }
 
 #displayButton {
@@ -83,23 +80,78 @@ body {
 img {
   width: 300px;
   height: auto;
-  background-image: url('/RE4uOIy.webp');
-  background-size: cover; 
-  background-position: center; 
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   text-align: center;
 }
-p{
-  background-color:rgb(243, 241, 238);
+p {
+  background-color: rgb(243, 241, 238);
   box-shadow: #45a049;
   padding: 10px;
   font-size: large;
-  text-shadow: #FC0 1px 0 10px;
-  
+  text-shadow: #fc0 1px 0 10px;
 }
 /* movies Display */
-#moviesDisplay{
-  display: flexbox;
+#moviesDisplay {
+  display: flex;
   flex-wrap: wrap;
-  
+  gap: 10px;
+  justify-content: center;
+}
+.movie-poster {
+  flex: 1 1 200px;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.movie-poster img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+#movieDetail {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#movieDetail img {
+  max-width: 80%;
+}
+#closeDetail {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+/* / */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: #afa8a8;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
 }

@@ -1,4 +1,4 @@
-//data fetching from different api 
+//data fetching from different api
 //----------------------------------------
 //#region jokeApi fetching
 async function fetchData() {
@@ -8,9 +8,9 @@ async function fetchData() {
   try {
     let response = await fetch("https://icanhazdadjoke.com/", {
       method: "GET",
-      headers:{
-        accept:"application/json"
-      }
+      headers: {
+        accept: "application/json",
+      },
     });
     //   console.log(response);
     data = await response.json();
@@ -39,7 +39,7 @@ async function fetchTheCat() {
     );
     // console.log(response, "....");
     data = await response.json();
-    console.log(data, "..data");
+    // console.log(data, "..data");
   } catch (error) {
     console.log(error);
   }
@@ -47,14 +47,9 @@ async function fetchTheCat() {
 }
 //#endregion
 //-----------------------------------------------------------------------------
-//#region search and fetch the match movie and display it
-
-// const api_key = "4a8a6e882dfe23d4066d963ccb7b3c72";
-// https://api.themoviedb.org/3/movie/11?api-key4a8a6e882dfe23d4066d963ccb7b3c72
-//const response = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=4a8a6e882dfe23d4066d963ccb7b3c72)
-// const url = `https://api.themoviedb.org/3/movie/11?api_key=${api_key}`;
-// https://api.themoviedb.org/3/discover/tv?api_key=4a8a6e882dfe23d4066d963ccb7b3c72&with_networks=213
-async function fetchMovies() {
+//#region search and fetch the match movie and display ii
+const API_KEY = `4a8a6e882dfe23d4066d963ccb7b3c72`;
+async function fetchMovies(query, page = 1) {
   let data;
   try {
     const options = {
@@ -64,13 +59,14 @@ async function fetchMovies() {
       },
     };
 
-    let response = await fetch(
-      "https://api.themoviedb.org/3/discover/tv?api_key=4a8a6e882dfe23d4066d963ccb7b3c72&with_networks=213",
-      options
-    );
-    // console.log(response, "....");
+    let url = `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&with_networks=213&page=${page}`;
+    if (query) {
+      url = `https://api.themoviedb.org/3/search/tv?api_key=${API_KEY}&query=${encodeURIComponent(
+        query
+      )}&page=${page}`;
+    }
+    let response = await fetch(url, options);
     data = await response.json();
-    console.log(data, "..data");
   } catch (error) {
     console.log(error);
   }
@@ -79,4 +75,4 @@ async function fetchMovies() {
 //#endregion
 //-----------------------------------------------------------------------------
 // exports
-export { fetchData, fetchTheCat ,fetchMovies};
+export { fetchData, fetchTheCat, fetchMovies, API_KEY };
